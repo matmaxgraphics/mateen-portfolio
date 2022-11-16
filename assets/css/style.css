@@ -244,3 +244,112 @@ nav .hamburger:hover {
   }
 }
 /*========END OF PROJECT SECTION STYLING========*/
+/*========SIDE PROJECT SECTION STYLING========*/
+.side-projects h2 {
+  margin-bottom: 24px;
+}
+
+.cards--container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  place-items: center;
+  gap: 24px;
+}
+.cards--container .card--item {
+  border: 1.5px solid #000;
+  padding: 12px 12px 18px;
+  height: 480px;
+}
+.cards--container .card--item img {
+  width: 100%;
+  height: 250px;
+}
+.cards--container .card--item h4 {
+  font-size: 18px;
+  margin: 24px 0 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.cards--container .card--item p {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.cards--container .card--item a {
+  width: 100%;
+}
+
+@media (max-width: 300px) {
+  .cards--container {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+  .cards--container .card--item {
+    max-width: 280px;
+  }
+}
+/*========END OF SIDE PROJECT SECTION STYLING========*/
+/*========BLOG SECTION STYLING========*/
+.blog-section h2 {
+  margin-bottom: 24px;
+}
+.blog-section .cards--container {
+  margin-bottom: 48px;
+}
+.blog-section a.more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*========END OF BLOG SECTION STYLING========*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 24px;
+  border-top: 2px solid #000;
+  padding: 24px 0;
+}
+footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 24px;
+}
+footer .email-contact h2 {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 700px) {
+  footer {
+    gap: 48px;
+  }
+}
+@media (max-width: 500px) {
+  footer .social-links {
+    gap: 12px;
+  }
+}
