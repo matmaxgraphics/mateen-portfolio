@@ -1,148 +1,21 @@
-@import "variables";
-@import "mixins";
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  padding: 20px 60px;
-  font-family: $bodyFont;
-}
-@media (max-width: 800px) {
-  body {
-    padding: 12px 24px;
-  }
-}
-h1 {
-  font-size: clamp(2em, 2.67vw, 2.5em);
-  font-weight: 400;
-}
-
-h2 {
-  font-size: clamp(1.5em, 1.75em, 2em);
-  font-weight: 700;
-}
-h3 {
-  font-size: clamp(1.125em, 1.5em, 24px);
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: $headingFont;
-}
-p {
-  font-size: 16px;
-}
-.bold-text {
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  font-family: $bodyFont;
-  transition: 0.3s;
-  &:hover {
-    color: $linkTextHover;
-    transition: 0.3s;
-  }
-}
-
-img {
-  object-fit: cover;
-  object-position: center;
-}
-
-.link-text {
-  font-weight: 600;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.section--bottom__margin {
-  margin-bottom: 96px;
-}
-
-/*========NAVIGATION BAR STYLING========*/
-nav {
-  height: 66px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  .logo-img {
-    width: 80px;
-    height: auto;
-  }
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-  }
-  li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 24px;
-  }
-
-  .hamburger {
-    font-size: 24px;
-    transition: 0.3s;
-    display: none;
-    &:hover {
-      color: $linkTextHover;
-      transition: 0.3s;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  nav {
-    .nav-links {
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      font-size: 24px;
-      background-color: #fff;
-      padding: 0px 12px;
-      // display: none;
-    }
-    li {
-      margin-top: 24px;
-      width: 100%;
-    }
-    .hamburger {
-      display: block;
-    }
-  }
-  .hidden {
-    display: none !important;
-  }
-  .toggleShow {
-    display: block;
-    width: 100%;
-    height: 80vh;
-  }
-}
-/*========END OF NAVIGATION BAR STYLING========*/
-
 /*========HERO SECTION STYLING========*/
 .hero-section {
-  max-width: 800px;
+  // max-width: 800px;
   height: 100%;
-  display: grid;
-  place-content: center;
+  // display: grid;
+  // place-content: center;
+  margin-bottom: 64px;
   // margin-bottom: 48px;
+  .inner--container{
+    max-width: 800px;
+    margin: unset;
+  }
   p {
     margin-bottom: 12px;
   }
   h1 {
     margin-bottom: 48px;
+    // max-width: 800px;
     span {
       font-style: italic;
       font-weight: 500;
@@ -232,7 +105,6 @@ nav {
 }
 /*========END OF PROJECT SECTION STYLING========*/
 
-
 /*========SIDE PROJECT SECTION STYLING========*/
 .side-projects {
   h2 {
@@ -275,10 +147,10 @@ nav {
   }
 }
 
-@media (max-width: 300px){
-  .cards--container{
+@media (max-width: 300px) {
+  .cards--container {
     grid-template-columns: none;
-    .card--item{
+    .card--item {
       max-width: 280px;
     }
   }
@@ -286,52 +158,20 @@ nav {
 /*========END OF SIDE PROJECT SECTION STYLING========*/
 
 
-
 /*========BLOG SECTION STYLING========*/
-.blog-section{
-  h2{
+.blog-section {
+
+  h2 {
     margin-bottom: 24px;
   }
-  .cards--container{
+  .cards--container {
     margin-bottom: 48px;
   }
-  a.more-btn{
+  a.more-btn {
     display: flex;
     justify-content: center;
   }
 }
 /*========END OF BLOG SECTION STYLING========*/
 
-footer{
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-flow: row wrap;
-  gap: 24px;
-  border-top: 2px solid #000;
-  padding: 24px 0;
-  .social-links{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 24px;
-  }
-  .email-contact{
-    h2{
-      margin-bottom: 12px;
-    }
-  }
-}
 
-@media (max-width: 700px){
-  footer{
-    gap: 48px;
-  }
-}
-
-@media (max-width: 500px){
-  footer{
-    .social-links{
-      gap: 12px;
-    }
-  }
-}
