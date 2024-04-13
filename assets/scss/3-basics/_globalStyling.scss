@@ -28,11 +28,17 @@ h2 {
 h3 {
   font-size: clamp(1.125em, 1.5em, 24px);
 }
+h5{
+  font-size: 18px;
+}
 h1,
 h2,
 h3,
 h4 {
   font-family: $headingFont;
+}
+p.body-md-size{
+  font-size: 18px;
 }
 p {
   font-size: 16px;
@@ -68,4 +74,10 @@ img {
 .section_max-width {
   max-width: 1400px;
   margin: auto;
+}
+ul{
+  list-style: none;
+}
+.semi-bold{
+  font-weight: 600;
 }
