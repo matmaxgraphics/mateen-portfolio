@@ -345,7 +345,11 @@
   }
 }
 /*===================END OF EXPERIENCE SECTION STYLING=============*/
-
+.case--study{
+  p{
+    font-size: 18px;
+  }
+}
 .banner-section {
   .inner-wrapper {
     display: flex;
@@ -419,6 +423,11 @@
     display: flex;
     gap: 16px;
     flex-flow: row wrap;
+  }
+  span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 }
 
