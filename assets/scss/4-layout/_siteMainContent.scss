@@ -220,7 +220,7 @@
     }
     .img-container {
       width: 100%;
-    text-align: center;
+      text-align: center;
       img {
         max-width: 400px;
         height: 500px;
@@ -239,6 +239,7 @@
   border: 1px solid $hrColor;
 }
 
+/*===================ABOUT SERVICES SECTION STYLING=============*/
 .services--section {
   margin: 48px auto;
   hr {
@@ -273,18 +274,18 @@
     }
   }
 }
+/*===================END OF ABOUT SERVICES SECTION STYLING=============*/
 
-
-
-.technologies-section{
+/*===================TECHNOLOGIES SECTION STYLING=============*/
+.technologies-section {
   margin-bottom: 48px;
-  h2{
+  h2 {
     margin-bottom: 16px;
   }
-  .technology--lists{
+  .technology--lists {
     max-width: 400px;
   }
-  ul{
+  ul {
     display: flex;
     gap: 16px;
     flex-flow: row wrap;
@@ -292,53 +293,177 @@
     font-size: inherit;
   }
 }
+/*===================END OF TECHNOLOGIES SECTION STYLING=============*/
 
-
-
-.experience-section{
-  h2{
+/*===================EXPERIENCE SECTION STYLING=============*/
+.experience-section {
+  h2 {
     margin-bottom: 24px;
   }
 }
 
-.experience-container{
-  .experience{
+.experience-container {
+  .experience {
     display: flex;
     gap: 24px;
     width: 100%;
     margin-bottom: 48px;
   }
-  .experience--duration{
+  .experience--duration {
     width: 25%;
   }
-  .work--experience{
+  .work--experience {
     width: 80%;
-    h5, p, li{
+    h5,
+    p,
+    li {
       margin-bottom: 16px;
     }
-    p{
+    p {
       color: #696969;
     }
-    
   }
 }
 
-@media(max-width: 900px){
-  .experience-container{
-    .experience{
+@media (max-width: 900px) {
+  .experience-container {
+    .experience {
       flex-direction: column;
     }
-    .experience--duration{
+    .experience--duration {
       width: 100%;
     }
-    .work--experience{
-      width: 100%;      
+    .work--experience {
+      width: 100%;
     }
   }
 
-  .education-section{
-    .experience{
+  .education-section {
+    .experience {
       gap: 16px;
+    }
+  }
+}
+/*===================END OF EXPERIENCE SECTION STYLING=============*/
+
+.banner-section {
+  .inner-wrapper {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
+    h1 {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-family: $bodyFont;
+      color: $secondaryColor;
+      margin-bottom: 16px;
+    }
+    .text-description {
+      width: 50%;
+    }
+    .img-container {
+      width: 50%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner-section {
+    margin-top: 48px;
+    .inner-wrapper{
+      flex-direction: column;
+      .text-description {
+        width: 100%;
+      }
+      .img-container {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+.project-overview {
+  h2,
+  hr {
+    margin-bottom: 16px;
+  }
+  h3 {
+    margin-bottom: 8px;
+  }
+  article {
+    margin-bottom: 24px;
+  }
+  ul {
+    margin-top: 8px;
+  }
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+.technologies__used {
+  margin-bottom: 48px;
+  h3 {
+    margin-bottom: 8px;
+  }
+  .inner--container {
+    display: flex;
+    gap: 16px;
+    flex-flow: row wrap;
+  }
+}
+
+.screen--showcase {
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  .img-group_mobile {
+    margin: 24px 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+    img {
+      flex: 1;
+      width: calc(25% - 24px);
+    }
+  }
+  .img-group_desktop{
+    margin: 24px 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+    img{
+      width: calc(50% - 24px);
+      flex: 1;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .screen--showcase {
+    .img-group_mobile{
+      img {
+        flex: unset;
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+      }
+    }
+
+    .img-group_desktop{
+      img{
+        width: 100%;
+        flex: unset;
+      }
     }
   }
 }
