@@ -345,6 +345,9 @@
   }
 }
 /*===================END OF EXPERIENCE SECTION STYLING=============*/
+
+
+/*===============PROJECTS CASE STUDY STYLING=================*/
 .case--study{
   p{
     font-size: 18px;
@@ -408,6 +411,7 @@
   }
   ul {
     margin-top: 8px;
+    font-size: 1.125rem;
   }
   li {
     margin-bottom: 16px;
@@ -473,6 +477,22 @@
         width: 100%;
         flex: unset;
       }
+    }
+  }
+}
+
+.showcase-section{
+  margin-top: 24px;
+  .cards--container{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    .card--item{
+      height: 400px;
+    }
+    .card--details{
+      display: inline;
+    }
+    p{
+      margin-top: 16px;
     }
   }
 }

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--meta data-->
+    <meta name="description" content="" />
+    <!--Favicon-->
+    <link rel="icon" href="../assets/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mateen Gbadamosi | Project - Nuke Blog</title>
+    <link rel="stylesheet" type="text/css" href="../assets/scss/main.css" />
+
+    <!--GOOGLE FONT CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Remix Icon CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+  </head>
+
+  <body>
+    <nav class="section_max-width">
+      <div class="logo">
+        <a href="../index.html"
+          ><span
+            ><img
+              src="../assets/images/mateen-logo.png"
+              alt="Logo image for Mateen"
+              class="logo-img" /></span
+        ></a>
+      </div>
+
+      <ul class="nav-links">
+        <a href="../index.html#projects"><li>Work</li></a>
+        <a href="../about.html"><li>About</li></a>
+        <a href="../assets/images/Mateen Gbadamosi Resume.pdf" target="_blank"
+          ><li>Resume</li></a
+        >
+      </ul>
+
+      <i class="ri-menu-2-line hamburger"></i>
+    </nav>
+
+    <div class="case--study">
+      <section class="banner-section section--bottom__margin">
+        <div class="inner-wrapper section_max-width">
+          <article class="text-description">
+            <h1>Nuke Blog</h1>
+            <h2>A minimal lifestyle blog website</h2>
+            <a href="https://nuke-blog-supabase.vercel.app" class="link-text"
+              >Visit Website</a
+            >
+          </article>
+
+          <article class="img-container">
+            <img
+              src="../assets/images/nuke-blog-cover.png"
+              alt="banner cover for nuke blog"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="project-overview section_max-width">
+        <h2>Project Overview</h2>
+        <hr class="thick-border" />
+        <article>
+          <p>
+            Nuke Blog is a simple lifestyle blog website created using ReactJS
+            as the frontend framework and Supabase as the backend service. This
+            project involves developing an admin panel for managing users and
+            implementing CRUD operations for posts and categories.
+          </p>
+        </article>
+
+        <article>
+          <h3>Problem Statement</h3>
+          <p>
+            Nuke blog is a project inspired by a friend who uses the default
+            WordPress template to write her blog. I wasn’t satisfied with the
+            website’s design and layout, so I gave the offer to help create a
+            better blogging website, and also serve as a medium to up-skill.
+          </p>
+        </article>
+
+        <article>
+          <h3>Roles and Responsibilities</h3>
+          <ul>
+            <li>
+              <b>Frontend Development</b>: The entire frontend was implemented
+              using React, making it fully responsive, intuitive, and
+              user-friendly.
+            </li>
+            <li>
+              <b>Backend integration</b>: The blog is powered by Supabase as the
+              backend service, setting up a Node.js Express server to handle
+              sensitive admin-side operations securely.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Challenges/Constraint</h3>
+          <p>
+            Handling the image upload was the most challenging part, though
+            Supabase has its file storage in place, I couldn't figure out why
+            I'm unable to return the public.id, I kept getting undefined in the
+            console. Instead of using a different Baas, I opted for an
+            alternative approach using Cloudinary to handle image storage, then
+            returning the public URL upon upload which can then be stored as a
+            URL string in the database table, and It worked seamlessly.
+          </p>
+        </article>
+
+        <article>
+          <h3>Development</h3>
+          <p>
+            The backend uses Node.js and Express to create secure API routes for
+            managing users and performing server-side actions like user
+            creation, role assignment, and deletion of users. While the website
+            entails the basic features of a blog, Some of the key features of
+            the website include:
+          </p>
+          <section class="showcase-section">
+            <div class="section_max-width">
+              <div class="cards--container">
+                <article class="card--item">
+                  <iframe
+                    src="https://player.vimeo.com/video/1012669263?h=7c1b13eddf&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; clipboard-write"
+                    style="top: 0; left: 0; width: 100%; height: 80%"
+                  ></iframe>
+
+                  <div class="card--details">
+                    <p>
+                      A WYSIWYG text editor in which text can be formatted as
+                      desired. It supports inline image upload as well as link
+                      embedding
+                    </p>
+                  </div>
+                </article>
+
+                <article class="card--item">
+                  <iframe
+                    src="https://player.vimeo.com/video/1018755604?h=eb6b227b9e&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    style="width: 100%; height: 80%"
+                  ></iframe>
+
+                  <div class="card--details">
+                    <p>
+                      Social media sharing feature where you'll be redirected to
+                      the social media you clicked on with the link still
+                      intact.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="card--item">
+                  <iframe
+                    src="https://player.vimeo.com/video/1018810272?h=9c687c8df2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    style="width: 100%; height: 80%"
+                  ></iframe>
+
+                  <div class="card--details">
+                    <p>
+                      User Management: Admins can create new users by assigning
+                      them roles such as "admin" or "author." The user creation
+                      process avoids breaking active sessions by using
+                      Supabase's auth.admin.createUser() method instead of the
+                      regular sign-up method.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="card--item">
+                  <iframe
+                    src="https://player.vimeo.com/video/1018898821?h=523c07a6a7&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen;"
+                    style="width: 100%; height: 80%"
+                  ></iframe>
+
+                  <div class="card--details">
+                    <p>
+                      CRUD Operations: Admins can manage posts and categories
+                      with full CRUD functionalities (Create, Read, Update,
+                      Delete).
+                    </p>
+                  </div>
+                </article>
+
+                <article class="card--item">
+                  <iframe
+                        src="https://player.vimeo.com/video/1018902552?h=87d8560d1a&amp;autopause=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="
+                          width: 100%;
+                          height: 80%;
+                        "
+                      ></iframe>
+                  <div class="card--details">
+                    <p>
+                      Admin Panel Security: The panel uses a custom middleware
+                      function (protectedRoute) that prevents unauthorized
+                      access and redirects users without the correct
+                      permissions.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <div class="technologies__used section_max-width">
+          <h3>Frontend Technologies Used</h3>
+          <hr class="thick-border" />
+          <div class="inner--container">
+            <ul>
+              <li>
+                <b>Frontend</b>: React.js, React Toastify (handling visual
+                feedback), Vite for build optimization.
+              </li>
+              <li><b>Backend</b>: Node.js, Express for API development.</li>
+              <li>
+                <b>Database</b>: Supabase (PostgreSQL) for user management,
+                role-based authentication, and storing posts and categories.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    <footer>
+      <div>
+        <a
+          href="../assets/images/Mateen_Gbadamosi_Resume.pdf"
+          download="Mateen_Gbadamosi_Resume.pdf"
+          class="link-text"
+          >Download my Resume</a
+        >
+      </div>
+
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/mateen-gbadamosi-78327b1b3"
+          class="link"
+          >LINKEDIN</a
+        >
+        <a
+          href="https://twitter.com/mateenUI?t=6vjyNMJVZQzHBTxMP6IWxw&s=09"
+          class="link"
+          >TWITTER</a
+        >
+        <a
+          href="https://www.instagram.com/mateen.ui?igsh=OTJwbGIwZjB5ZnF6"
+          class="link"
+          >INSTAGRAM</a
+        >
+        <a href="https://t.me/mateenUI" class="link">TELEGRAM</a>
+      </div>
+
+      <div class="email-contact">
+        <h2>Want to get in touch?</h2>
+        <a href="mailto:mateendeveloper@gmail.com" class="link-text email-link"
+          >mateendeveloper@gmail.com</a
+        >
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>
+  </body>
+</html>

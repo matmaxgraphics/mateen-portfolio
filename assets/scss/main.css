@@ -491,6 +491,7 @@ nav .hamburger:hover {
   }
 }
 /*===================END OF EXPERIENCE SECTION STYLING=============*/
+/*===============PROJECTS CASE STUDY STYLING=================*/
 .case--study p {
   font-size: 18px;
 }
@@ -548,6 +549,7 @@ nav .hamburger:hover {
 }
 .project-overview ul {
   margin-top: 8px;
+  font-size: 1.125rem;
 }
 .project-overview li {
   margin-bottom: 16px;
@@ -604,4 +606,19 @@ nav .hamburger:hover {
     width: 100%;
     flex: unset;
   }
+}
+.showcase-section {
+  margin-top: 24px;
+}
+.showcase-section .cards--container {
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.showcase-section .cards--container .card--item {
+  height: 400px;
+}
+.showcase-section .cards--container .card--details {
+  display: inline;
+}
+.showcase-section .cards--container p {
+  margin-top: 16px;
 }/*# sourceMappingURL=main.css.map */
